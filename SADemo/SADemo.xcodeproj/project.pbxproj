@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D3BD23A22110EEE00A33476 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BD23922110EEE00A33476 /* AppDelegate.m */; };
+		0D3BD23D22110EEF00A33476 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BD23C22110EEF00A33476 /* ViewController.m */; };
+		0D3BD24022110EEF00A33476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3BD23E22110EEF00A33476 /* Main.storyboard */; };
+		0D3BD24322110EF000A33476 /* SADemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BD24122110EF000A33476 /* SADemo.xcdatamodeld */; };
+		0D3BD24522110F0000A33476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D3BD24422110F0000A33476 /* Assets.xcassets */; };
+		0D3BD24822110F0000A33476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3BD24622110F0000A33476 /* LaunchScreen.storyboard */; };
+		0D3BD24B22110F0000A33476 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BD24A22110F0000A33476 /* main.m */; };
+		0D3BD25522110F0100A33476 /* SADemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BD25422110F0100A33476 /* SADemoTests.m */; };
+		0D3BD26022110F0100A33476 /* SADemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BD25F22110F0100A33476 /* SADemoUITests.m */; };
+		0DADE335225726D4001ED4B6 /* PokemonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DADE334225726D4001ED4B6 /* PokemonCell.m */; };
+		0DADE33922585D6B001ED4B6 /* NSObject+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DADE33822585D6B001ED4B6 /* NSObject+Add.m */; };
+		0DADE33C22586483001ED4B6 /* MESwizzleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DADE33B22586483001ED4B6 /* MESwizzleTool.m */; };
+		0DADE33F2258652B001ED4B6 /* SAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DADE33E2258652B001ED4B6 /* SAHelper.m */; };
+		0DBF91DD2211576000DCEDE9 /* SAConfigureJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DBF91DC2211575F00DCEDE9 /* SAConfigureJson.json */; };
+		0DBF91E022115CF300DCEDE9 /* PokemonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBF91DF22115CF300DCEDE9 /* PokemonModel.m */; };
+		0DBF91EA22116E7F00DCEDE9 /* UITableView+SAAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBF91E922116E7F00DCEDE9 /* UITableView+SAAdd.m */; };
+		289C3BDFE8A1C058A7245AB6 /* libPods-SADemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ECB1523E0329C6EDB33F17 /* libPods-SADemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D3BD25122110F0100A33476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D3BD22D22110EEE00A33476 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D3BD23422110EEE00A33476;
+			remoteInfo = SADemo;
+		};
+		0D3BD25C22110F0100A33476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D3BD22D22110EEE00A33476 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D3BD23422110EEE00A33476;
+			remoteInfo = SADemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D3BD23522110EEE00A33476 /* SADemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SADemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D3BD23822110EEE00A33476 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0D3BD23922110EEE00A33476 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0D3BD23B22110EEF00A33476 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0D3BD23C22110EEF00A33476 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0D3BD23F22110EEF00A33476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D3BD24222110EF000A33476 /* SADemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SADemo.xcdatamodel; sourceTree = "<group>"; };
+		0D3BD24422110F0000A33476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D3BD24722110F0000A33476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D3BD24922110F0000A33476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D3BD24A22110F0000A33476 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D3BD25022110F0100A33476 /* SADemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SADemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D3BD25422110F0100A33476 /* SADemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SADemoTests.m; sourceTree = "<group>"; };
+		0D3BD25622110F0100A33476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D3BD25B22110F0100A33476 /* SADemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SADemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D3BD25F22110F0100A33476 /* SADemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SADemoUITests.m; sourceTree = "<group>"; };
+		0D3BD26122110F0100A33476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DADE333225726D4001ED4B6 /* PokemonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokemonCell.h; sourceTree = "<group>"; };
+		0DADE334225726D4001ED4B6 /* PokemonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokemonCell.m; sourceTree = "<group>"; };
+		0DADE33722585D6B001ED4B6 /* NSObject+Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Add.h"; sourceTree = "<group>"; };
+		0DADE33822585D6B001ED4B6 /* NSObject+Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Add.m"; sourceTree = "<group>"; };
+		0DADE33A22586483001ED4B6 /* MESwizzleTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MESwizzleTool.h; sourceTree = "<group>"; };
+		0DADE33B22586483001ED4B6 /* MESwizzleTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MESwizzleTool.m; sourceTree = "<group>"; };
+		0DADE33D2258652B001ED4B6 /* SAHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAHelper.h; sourceTree = "<group>"; };
+		0DADE33E2258652B001ED4B6 /* SAHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAHelper.m; sourceTree = "<group>"; };
+		0DBF91DC2211575F00DCEDE9 /* SAConfigureJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SAConfigureJson.json; sourceTree = "<group>"; };
+		0DBF91DE22115CF300DCEDE9 /* PokemonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokemonModel.h; sourceTree = "<group>"; };
+		0DBF91DF22115CF300DCEDE9 /* PokemonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokemonModel.m; sourceTree = "<group>"; };
+		0DBF91E822116E7F00DCEDE9 /* UITableView+SAAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+SAAdd.h"; sourceTree = "<group>"; };
+		0DBF91E922116E7F00DCEDE9 /* UITableView+SAAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SAAdd.m"; sourceTree = "<group>"; };
+		11ECB1523E0329C6EDB33F17 /* libPods-SADemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SADemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C823206465F413001C42490 /* Pods-SADemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SADemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SADemo/Pods-SADemo.release.xcconfig"; sourceTree = "<group>"; };
+		702B468A9075BECD2DFCE5CD /* Pods-SADemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SADemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SADemo/Pods-SADemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D3BD23222110EEE00A33476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				289C3BDFE8A1C058A7245AB6 /* libPods-SADemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D3BD24D22110F0100A33476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D3BD25822110F0100A33476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D3BD22C22110EED00A33476 = {
+			isa = PBXGroup;
+			children = (
+				0D3BD23722110EEE00A33476 /* SADemo */,
+				0D3BD25322110F0100A33476 /* SADemoTests */,
+				0D3BD25E22110F0100A33476 /* SADemoUITests */,
+				0D3BD23622110EEE00A33476 /* Products */,
+				9F8EEF8B1AAACE88A36AF11D /* Pods */,
+				E16557F07DD894361D2A0DED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0D3BD23622110EEE00A33476 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D3BD23522110EEE00A33476 /* SADemo.app */,
+				0D3BD25022110F0100A33476 /* SADemoTests.xctest */,
+				0D3BD25B22110F0100A33476 /* SADemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D3BD23722110EEE00A33476 /* SADemo */ = {
+			isa = PBXGroup;
+			children = (
+				0DBF91DB2211574500DCEDE9 /* SAHelper */,
+				0D3BD23822110EEE00A33476 /* AppDelegate.h */,
+				0D3BD23922110EEE00A33476 /* AppDelegate.m */,
+				0D3BD23B22110EEF00A33476 /* ViewController.h */,
+				0D3BD23C22110EEF00A33476 /* ViewController.m */,
+				0DADE333225726D4001ED4B6 /* PokemonCell.h */,
+				0DADE334225726D4001ED4B6 /* PokemonCell.m */,
+				0DBF91DE22115CF300DCEDE9 /* PokemonModel.h */,
+				0DBF91DF22115CF300DCEDE9 /* PokemonModel.m */,
+				0D3BD23E22110EEF00A33476 /* Main.storyboard */,
+				0D3BD24422110F0000A33476 /* Assets.xcassets */,
+				0D3BD24622110F0000A33476 /* LaunchScreen.storyboard */,
+				0D3BD24922110F0000A33476 /* Info.plist */,
+				0D3BD24A22110F0000A33476 /* main.m */,
+				0D3BD24122110EF000A33476 /* SADemo.xcdatamodeld */,
+			);
+			path = SADemo;
+			sourceTree = "<group>";
+		};
+		0D3BD25322110F0100A33476 /* SADemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D3BD25422110F0100A33476 /* SADemoTests.m */,
+				0D3BD25622110F0100A33476 /* Info.plist */,
+			);
+			path = SADemoTests;
+			sourceTree = "<group>";
+		};
+		0D3BD25E22110F0100A33476 /* SADemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D3BD25F22110F0100A33476 /* SADemoUITests.m */,
+				0D3BD26122110F0100A33476 /* Info.plist */,
+			);
+			path = SADemoUITests;
+			sourceTree = "<group>";
+		};
+		0DADE33622585D38001ED4B6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0DADE33722585D6B001ED4B6 /* NSObject+Add.h */,
+				0DADE33822585D6B001ED4B6 /* NSObject+Add.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0DBF91DB2211574500DCEDE9 /* SAHelper */ = {
+			isa = PBXGroup;
+			children = (
+				0DADE33622585D38001ED4B6 /* Category */,
+				0DBF91DC2211575F00DCEDE9 /* SAConfigureJson.json */,
+				0DADE33D2258652B001ED4B6 /* SAHelper.h */,
+				0DADE33E2258652B001ED4B6 /* SAHelper.m */,
+				0DADE33A22586483001ED4B6 /* MESwizzleTool.h */,
+				0DADE33B22586483001ED4B6 /* MESwizzleTool.m */,
+				0DBF91E822116E7F00DCEDE9 /* UITableView+SAAdd.h */,
+				0DBF91E922116E7F00DCEDE9 /* UITableView+SAAdd.m */,
+			);
+			path = SAHelper;
+			sourceTree = "<group>";
+		};
+		9F8EEF8B1AAACE88A36AF11D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				702B468A9075BECD2DFCE5CD /* Pods-SADemo.debug.xcconfig */,
+				6C823206465F413001C42490 /* Pods-SADemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E16557F07DD894361D2A0DED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11ECB1523E0329C6EDB33F17 /* libPods-SADemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D3BD23422110EEE00A33476 /* SADemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D3BD26422110F0100A33476 /* Build configuration list for PBXNativeTarget "SADemo" */;
+			buildPhases = (
+				1FE07BF530E7C5908BF77CA4 /* [CP] Check Pods Manifest.lock */,
+				0D3BD23122110EEE00A33476 /* Sources */,
+				0D3BD23222110EEE00A33476 /* Frameworks */,
+				0D3BD23322110EEE00A33476 /* Resources */,
+				BA4A6F87452154D2EA8D2478 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SADemo;
+			productName = SADemo;
+			productReference = 0D3BD23522110EEE00A33476 /* SADemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D3BD24F22110F0100A33476 /* SADemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D3BD26722110F0100A33476 /* Build configuration list for PBXNativeTarget "SADemoTests" */;
+			buildPhases = (
+				0D3BD24C22110F0100A33476 /* Sources */,
+				0D3BD24D22110F0100A33476 /* Frameworks */,
+				0D3BD24E22110F0100A33476 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D3BD25222110F0100A33476 /* PBXTargetDependency */,
+			);
+			name = SADemoTests;
+			productName = SADemoTests;
+			productReference = 0D3BD25022110F0100A33476 /* SADemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0D3BD25A22110F0100A33476 /* SADemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D3BD26A22110F0100A33476 /* Build configuration list for PBXNativeTarget "SADemoUITests" */;
+			buildPhases = (
+				0D3BD25722110F0100A33476 /* Sources */,
+				0D3BD25822110F0100A33476 /* Frameworks */,
+				0D3BD25922110F0100A33476 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D3BD25D22110F0100A33476 /* PBXTargetDependency */,
+			);
+			name = SADemoUITests;
+			productName = SADemoUITests;
+			productReference = 0D3BD25B22110F0100A33476 /* SADemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D3BD22D22110EEE00A33476 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					0D3BD23422110EEE00A33476 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					0D3BD24F22110F0100A33476 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0D3BD23422110EEE00A33476;
+					};
+					0D3BD25A22110F0100A33476 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0D3BD23422110EEE00A33476;
+					};
+				};
+			};
+			buildConfigurationList = 0D3BD23022110EEE00A33476 /* Build configuration list for PBXProject "SADemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D3BD22C22110EED00A33476;
+			productRefGroup = 0D3BD23622110EEE00A33476 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D3BD23422110EEE00A33476 /* SADemo */,
+				0D3BD24F22110F0100A33476 /* SADemoTests */,
+				0D3BD25A22110F0100A33476 /* SADemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D3BD23322110EEE00A33476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DBF91DD2211576000DCEDE9 /* SAConfigureJson.json in Resources */,
+				0D3BD24822110F0000A33476 /* LaunchScreen.storyboard in Resources */,
+				0D3BD24522110F0000A33476 /* Assets.xcassets in Resources */,
+				0D3BD24022110EEF00A33476 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D3BD24E22110F0100A33476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D3BD25922110F0100A33476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FE07BF530E7C5908BF77CA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SADemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA4A6F87452154D2EA8D2478 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SADemo/Pods-SADemo-resources.sh",
+				"${PODS_ROOT}/SensorsAnalyticsSDK/SensorsAnalyticsSDK/SensorsAnalyticsSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SensorsAnalyticsSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SADemo/Pods-SADemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D3BD23122110EEE00A33476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DADE33C22586483001ED4B6 /* MESwizzleTool.m in Sources */,
+				0D3BD23D22110EEF00A33476 /* ViewController.m in Sources */,
+				0DADE335225726D4001ED4B6 /* PokemonCell.m in Sources */,
+				0D3BD24322110EF000A33476 /* SADemo.xcdatamodeld in Sources */,
+				0DBF91E022115CF300DCEDE9 /* PokemonModel.m in Sources */,
+				0DBF91EA22116E7F00DCEDE9 /* UITableView+SAAdd.m in Sources */,
+				0DADE33922585D6B001ED4B6 /* NSObject+Add.m in Sources */,
+				0D3BD24B22110F0000A33476 /* main.m in Sources */,
+				0D3BD23A22110EEE00A33476 /* AppDelegate.m in Sources */,
+				0DADE33F2258652B001ED4B6 /* SAHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D3BD24C22110F0100A33476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D3BD25522110F0100A33476 /* SADemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D3BD25722110F0100A33476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D3BD26022110F0100A33476 /* SADemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D3BD25222110F0100A33476 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D3BD23422110EEE00A33476 /* SADemo */;
+			targetProxy = 0D3BD25122110F0100A33476 /* PBXContainerItemProxy */;
+		};
+		0D3BD25D22110F0100A33476 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D3BD23422110EEE00A33476 /* SADemo */;
+			targetProxy = 0D3BD25C22110F0100A33476 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D3BD23E22110EEF00A33476 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D3BD23F22110EEF00A33476 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0D3BD24622110F0000A33476 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D3BD24722110F0000A33476 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D3BD26222110F0100A33476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0D3BD26322110F0100A33476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D3BD26522110F0100A33476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 702B468A9075BECD2DFCE5CD /* Pods-SADemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WG4X3PL2V;
+				INFOPLIST_FILE = SADemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Sugar.SADemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D3BD26622110F0100A33476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C823206465F413001C42490 /* Pods-SADemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WG4X3PL2V;
+				INFOPLIST_FILE = SADemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Sugar.SADemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0D3BD26822110F0100A33476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SADemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Sugar.SADemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SADemo.app/SADemo";
+			};
+			name = Debug;
+		};
+		0D3BD26922110F0100A33476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SADemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Sugar.SADemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SADemo.app/SADemo";
+			};
+			name = Release;
+		};
+		0D3BD26B22110F0100A33476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SADemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Sugar.SADemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SADemo;
+			};
+			name = Debug;
+		};
+		0D3BD26C22110F0100A33476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SADemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Sugar.SADemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SADemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D3BD23022110EEE00A33476 /* Build configuration list for PBXProject "SADemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D3BD26222110F0100A33476 /* Debug */,
+				0D3BD26322110F0100A33476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D3BD26422110F0100A33476 /* Build configuration list for PBXNativeTarget "SADemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D3BD26522110F0100A33476 /* Debug */,
+				0D3BD26622110F0100A33476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D3BD26722110F0100A33476 /* Build configuration list for PBXNativeTarget "SADemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D3BD26822110F0100A33476 /* Debug */,
+				0D3BD26922110F0100A33476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D3BD26A22110F0100A33476 /* Build configuration list for PBXNativeTarget "SADemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D3BD26B22110F0100A33476 /* Debug */,
+				0D3BD26C22110F0100A33476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0D3BD24122110EF000A33476 /* SADemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0D3BD24222110EF000A33476 /* SADemo.xcdatamodel */,
+			);
+			currentVersion = 0D3BD24222110EF000A33476 /* SADemo.xcdatamodel */;
+			path = SADemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0D3BD22D22110EEE00A33476 /* Project object */;
+}

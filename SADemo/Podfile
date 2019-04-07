@@ -1,0 +1,6 @@
+platform :ios, '7.0'
+target 'SADemo' do
+pod 'Masonry'
+pod 'SensorsAnalyticsSDK'
+pod 'SDWebImage'
+end

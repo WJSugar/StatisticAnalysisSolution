@@ -1,0 +1,28 @@
+PODS:
+  - Masonry (1.1.0)
+  - SDWebImage (4.4.3):
+    - SDWebImage/Core (= 4.4.3)
+  - SDWebImage/Core (4.4.3)
+  - SensorsAnalyticsSDK (1.10.19):
+    - SensorsAnalyticsSDK/core (= 1.10.19)
+  - SensorsAnalyticsSDK/core (1.10.19)
+
+DEPENDENCIES:
+  - Masonry
+  - SDWebImage
+  - SensorsAnalyticsSDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - SDWebImage
+    - SensorsAnalyticsSDK
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
+  SensorsAnalyticsSDK: 3a44d7c551c72315f64b1ff202c06ef638ac41ec
+
+PODFILE CHECKSUM: b879d019b647c2d92bd2247198d933fb4aa538dd
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,17 @@
+{
+    "controllers" : {
+        "ViewController" : "8501",
+    },
+    
+    "tableView" : {
+        "ViewController" : {
+            "reuseIdentifier" : "cell",
+            "entity" : "model",
+            "event" : "list_didClick",
+            "params" : {
+                "title" : "title",
+                "image" : "image",
+            }
+        },
+    },
+}
