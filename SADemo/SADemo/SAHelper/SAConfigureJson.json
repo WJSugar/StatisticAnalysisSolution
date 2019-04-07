@@ -5,13 +5,28 @@
     
     "tableView" : {
         "ViewController" : {
-            "reuseIdentifier" : "cell",
-            "entity" : "model",
-            "event" : "list_didClick",
-            "params" : {
-                "title" : "title",
-                "image" : "image",
-            }
+            "me_tableView:didSelectRowAtIndexPath:" : {
+                "reuseIdentifier" : "cell",
+                "entity" : "model",
+                "event" : "list_didClick",
+                "params" : {
+                    "title" : "title",
+                    "image" : "image",
+                },
+            },
+            
+            "me_tableView:willDisplayCell:forRowAtIndexPath:" : {
+                "reuseIdentifier" : "cell",
+                "entity" : "model",
+                "event" : "list_isExpose",
+                "params" : {
+                    "title" : "title",
+                    "image" : "image",
+                },
+            },
+
+            
+            
         },
     },
 }

@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)swizzleObject:(NSObject *)object
      originalSelector:(SEL)originalSelector
           newSelector:(SEL)newSelector;
+
+//
+@property (nonatomic, assign) BOOL me_isExpose;
+
 @end
 
 

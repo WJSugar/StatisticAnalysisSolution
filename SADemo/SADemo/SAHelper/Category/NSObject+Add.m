@@ -10,6 +10,14 @@
 
 @implementation NSObject (Add)
 
+- (void)setMe_isExpose:(BOOL)me_isExpose {
+    objc_setAssociatedObject(self, @selector(setMe_isExpose:), @(me_isExpose), OBJC_ASSOCIATION_ASSIGN);
+}
+
+- (BOOL)me_isExpose {
+    return (BOOL)objc_getAssociatedObject(self, @selector(setMe_isExpose:));
+}
+
 - (id)valueForProperty:(NSString *)property {
     unsigned int outCount;
     objc_property_t *property_ts = class_copyPropertyList([self class], &outCount);

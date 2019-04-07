@@ -47,74 +47,68 @@
            originalSelector:originalWillDisplayCellSel
                 newSelector:newWillDisplayCellSel];
     }
-
-    
-    
     
 }
 
 - (void)me_tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self me_tableView:tableView didSelectRowAtIndexPath:indexPath];
-    //改类是否注册了埋点事件
-    NSString *delegateClassName = NSStringFromClass([tableView.delegate class]);
-    NSDictionary *saConfigure = [[SAHelper sharedInstance] tableConfigure][delegateClassName];
-    if (!saConfigure) return;
-    
-    NSString *reuseIdentifier = saConfigure[@"reuseIdentifier"];
+    NSString *methodName = @"me_tableView:didSelectRowAtIndexPath:";
+    NSDictionary *methodConfigure = [tableView configureForMethod:methodName];;
+    if (!methodConfigure) return;
+
+    NSString *reuseIdentifier = methodConfigure[@"reuseIdentifier"];
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     if ([cell.reuseIdentifier isEqualToString:reuseIdentifier]) {
-        NSMutableDictionary *values = [NSMutableDictionary new];
-        NSString *event = saConfigure[@"event"];
-        
-        NSString *entity = saConfigure[@"entity"];
-        id model = [cell valueForKey:entity];
-        
-        NSDictionary *params = saConfigure[@"params"];
-        if (params) {
-            for (NSString *parameter in params) {
-                id title = [model valueForProperty:parameter];
-                [values setValue:title forKey:parameter];
-            }
-        }
-        
-        [[SensorsAnalyticsSDK sharedInstance] track:event
-                                     withProperties:values];
-        NSLog(@"---upload value = %@", values);
+        [tableView configureTrackParam:cell methodConfigure:methodConfigure];
     }
 }
-
 
 - (void)me_tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self me_tableView:tableView willDisplayCell:cell forRowAtIndexPath:indexPath];
+    NSString *methodName = @"me_tableView:willDisplayCell:forRowAtIndexPath:";
     
+    NSDictionary *methodConfigure = [tableView configureForMethod:methodName];;
+    if (!methodConfigure) return;
+    
+    NSString *entity = methodConfigure[@"entity"];
+    id model = [cell valueForKey:entity];
+    NSObject *temp = (NSObject *)model;
+    if (temp.me_isExpose) return;
+    NSString *reuseIdentifier = methodConfigure[@"reuseIdentifier"];
+    if ([cell.reuseIdentifier isEqualToString:reuseIdentifier]) {
+        [tableView configureTrackParam:cell methodConfigure:methodConfigure];
+    }
+    temp.me_isExpose = YES;
 }
 
-- (void)trackTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath {
-    //改类是否注册了埋点事件
-    NSString *delegateClassName = NSStringFromClass([tableView.delegate class]);
+
+- (NSDictionary *)configureForMethod:(NSString *)methodName {
+    NSString *delegateClassName = NSStringFromClass([self.delegate class]);
     NSDictionary *saConfigure = [[SAHelper sharedInstance] tableConfigure][delegateClassName];
-    if (!saConfigure) return;
+    if (!saConfigure) return nil;
     
-    NSString *reuseIdentifier = saConfigure[@"reuseIdentifier"];
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    if ([cell.reuseIdentifier isEqualToString:reuseIdentifier]) {
-        NSMutableDictionary *values = [NSMutableDictionary new];
-        NSString *event = saConfigure[@"event"];
-        
-        NSString *entity = saConfigure[@"entity"];
-        id model = [cell valueForKey:entity];
-        
-        NSDictionary *params = saConfigure[@"params"];
-        if (params) {
-            for (NSString *parameter in params) {
-                id title = [model valueForProperty:parameter];
-                [values setValue:title forKey:parameter];
-            }
+    NSDictionary *methodConfigure = saConfigure[methodName];
+    if (!methodConfigure) return nil;
+    return methodConfigure;
+}
+
+- (void)configureTrackParam:(UITableViewCell *)cell methodConfigure:(NSDictionary *)methodConfigure {
+    NSMutableDictionary *values = [NSMutableDictionary new];
+    NSString *event = methodConfigure[@"event"];
+    NSString *entity = methodConfigure[@"entity"];
+    id model = [cell valueForKey:entity];
+    
+    NSDictionary *params = methodConfigure[@"params"];
+    if (params) {
+        for (NSString *parameter in params) {
+            id title = [model valueForProperty:parameter];
+            [values setValue:title forKey:parameter];
         }
-        
-        [[SensorsAnalyticsSDK sharedInstance] track:event
-                                     withProperties:values];
-        NSLog(@"---upload value = %@", values);
     }
+    [[SensorsAnalyticsSDK sharedInstance] track:event
+                                 withProperties:values];
+    
+    NSLog(@"event = %@, values = %@", event, values);
 }
 
 @end
