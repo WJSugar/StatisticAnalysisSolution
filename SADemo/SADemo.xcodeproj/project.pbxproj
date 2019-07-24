@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0F3FC422E865EE00DCEC34 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F3FC322E865EE00DCEC34 /* DetailViewController.m */; };
+		0D0F3FC722E8681D00DCEC34 /* UIControl+SAAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F3FC622E8681D00DCEC34 /* UIControl+SAAdd.m */; };
 		0D3BD23A22110EEE00A33476 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BD23922110EEE00A33476 /* AppDelegate.m */; };
 		0D3BD23D22110EEF00A33476 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BD23C22110EEF00A33476 /* ViewController.m */; };
 		0D3BD24022110EEF00A33476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3BD23E22110EEF00A33476 /* Main.storyboard */; };
@@ -44,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0F3FC222E865EE00DCEC34 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		0D0F3FC322E865EE00DCEC34 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		0D0F3FC522E8681D00DCEC34 /* UIControl+SAAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+SAAdd.h"; sourceTree = "<group>"; };
+		0D0F3FC622E8681D00DCEC34 /* UIControl+SAAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+SAAdd.m"; sourceTree = "<group>"; };
 		0D3BD23522110EEE00A33476 /* SADemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SADemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3BD23822110EEE00A33476 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D3BD23922110EEE00A33476 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -135,6 +141,8 @@
 				0D3BD23922110EEE00A33476 /* AppDelegate.m */,
 				0D3BD23B22110EEF00A33476 /* ViewController.h */,
 				0D3BD23C22110EEF00A33476 /* ViewController.m */,
+				0D0F3FC222E865EE00DCEC34 /* DetailViewController.h */,
+				0D0F3FC322E865EE00DCEC34 /* DetailViewController.m */,
 				0DADE333225726D4001ED4B6 /* PokemonCell.h */,
 				0DADE334225726D4001ED4B6 /* PokemonCell.m */,
 				0DBF91DE22115CF300DCEDE9 /* PokemonModel.h */,
@@ -172,6 +180,10 @@
 			children = (
 				0DADE33722585D6B001ED4B6 /* NSObject+Add.h */,
 				0DADE33822585D6B001ED4B6 /* NSObject+Add.m */,
+				0D0F3FC522E8681D00DCEC34 /* UIControl+SAAdd.h */,
+				0D0F3FC622E8681D00DCEC34 /* UIControl+SAAdd.m */,
+				0DBF91E822116E7F00DCEDE9 /* UITableView+SAAdd.h */,
+				0DBF91E922116E7F00DCEDE9 /* UITableView+SAAdd.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -185,8 +197,6 @@
 				0DADE33E2258652B001ED4B6 /* SAHelper.m */,
 				0DADE33A22586483001ED4B6 /* MESwizzleTool.h */,
 				0DADE33B22586483001ED4B6 /* MESwizzleTool.m */,
-				0DBF91E822116E7F00DCEDE9 /* UITableView+SAAdd.h */,
-				0DBF91E922116E7F00DCEDE9 /* UITableView+SAAdd.m */,
 			);
 			path = SAHelper;
 			sourceTree = "<group>";
@@ -382,6 +392,7 @@
 				0DADE33C22586483001ED4B6 /* MESwizzleTool.m in Sources */,
 				0D3BD23D22110EEF00A33476 /* ViewController.m in Sources */,
 				0DADE335225726D4001ED4B6 /* PokemonCell.m in Sources */,
+				0D0F3FC722E8681D00DCEC34 /* UIControl+SAAdd.m in Sources */,
 				0D3BD24322110EF000A33476 /* SADemo.xcdatamodeld in Sources */,
 				0DBF91E022115CF300DCEDE9 /* PokemonModel.m in Sources */,
 				0DBF91EA22116E7F00DCEDE9 /* UITableView+SAAdd.m in Sources */,
@@ -389,6 +400,7 @@
 				0D3BD24B22110F0000A33476 /* main.m in Sources */,
 				0D3BD23A22110EEE00A33476 /* AppDelegate.m in Sources */,
 				0DADE33F2258652B001ED4B6 /* SAHelper.m in Sources */,
+				0D0F3FC422E865EE00DCEC34 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

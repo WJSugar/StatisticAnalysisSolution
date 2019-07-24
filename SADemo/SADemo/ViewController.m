@@ -10,6 +10,7 @@
 #import "PokemonCell.h"
 #import "PokemonModel.h"
 #import <UIImageView+WebCache.h>
+#import "DetailViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -37,7 +38,8 @@
     }];
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    DetailViewController *vc = [DetailViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     PokemonCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];

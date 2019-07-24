@@ -47,7 +47,6 @@
            originalSelector:originalWillDisplayCellSel
                 newSelector:newWillDisplayCellSel];
     }
-    
 }
 
 - (void)me_tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -102,7 +101,9 @@
     if (params) {
         for (NSString *parameter in params) {
             id title = [model valueForProperty:parameter];
-            [values setValue:title forKey:parameter];
+            if (!title) {
+                [values setValue:title forKey:parameter];
+            }
         }
     }
     [[SensorsAnalyticsSDK sharedInstance] track:event
