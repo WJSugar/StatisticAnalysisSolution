@@ -73,13 +73,13 @@
     id model = [cell valueForKey:entity];
     NSObject *temp = (NSObject *)model;
     if (temp.me_isExpose) return;
+    
     NSString *reuseIdentifier = methodConfigure[@"reuseIdentifier"];
     if ([cell.reuseIdentifier isEqualToString:reuseIdentifier]) {
         [tableView configureTrackParam:cell methodConfigure:methodConfigure];
     }
     temp.me_isExpose = YES;
 }
-
 
 - (NSDictionary *)configureForMethod:(NSString *)methodName {
     NSString *delegateClassName = NSStringFromClass([self.delegate class]);
@@ -97,12 +97,15 @@
     NSString *entity = methodConfigure[@"entity"];
     id model = [cell valueForKey:entity];
     
-    NSDictionary *params = methodConfigure[@"params"];
-    if (params) {
-        for (NSString *parameter in params) {
-            id title = [model valueForProperty:parameter];
-            if (!title) {
-                [values setValue:title forKey:parameter];
+    if (entity.length) {
+        NSDictionary *params = methodConfigure[@"params"];
+        if (params) {
+            for (NSString *parameter in params) {
+                id title = [model valueForProperty:parameter];
+                NSString *temp = [NSString stringWithFormat:@"%@", title];
+                if (temp.length) {
+                    [values setValue:temp forKey:parameter];
+                }
             }
         }
     }

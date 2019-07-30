@@ -32,7 +32,30 @@
     
     "control" : {
         "DetailViewController" : {
-
+            "buttonAction" : {
+                "entity" : "my_model",
+                "event" : "list_didClick",
+                "params" : {
+                    "title" : "title",
+                    "image" : "image",
+                },
+            },
         },
-    }
+    },
+    
+    "gesture" : {
+        "DetailViewController" : {
+            "buttonTapAction" : {
+                "entity" : "my_model",
+                "event" : "list_didClick",
+                "params" : {
+                    "title" : "title",
+                    "image" : "image",
+                },
+            },
+        },
+    },
+
+    
+    
 }

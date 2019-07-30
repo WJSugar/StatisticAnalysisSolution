@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self _initTableView];
+
 }
 
 - (void)_initTableView {
@@ -38,7 +39,9 @@
     }];
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    PokemonModel *pokemon = self.models[indexPath.row];
     DetailViewController *vc = [DetailViewController new];
+    vc.my_model = pokemon;
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -67,7 +70,7 @@
         NSArray *titles = @[
                             @"皮卡丘~⚡️",
                             @"小火龙~🔥",
-                            @"波克比~🎤",
+                            @"胖丁~🎤",
                             ];
 
         for (NSInteger i = 0; i < images.count; i++) {
@@ -83,7 +86,7 @@
 
 + (NSString *)uuidString {
     CFUUIDRef uuid_ref = CFUUIDCreate(NULL);
-    CFStringRef uuid_string_ref= CFUUIDCreateString(NULL, uuid_ref);
+    CFStringRef uuid_string_ref = CFUUIDCreateString(NULL, uuid_ref);
     NSString *uuid = [NSString stringWithString:(__bridge NSString *)uuid_string_ref];
     CFRelease(uuid_ref);
     CFRelease(uuid_string_ref);

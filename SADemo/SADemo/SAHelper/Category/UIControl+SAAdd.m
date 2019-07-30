@@ -7,6 +7,9 @@
 
 #import "UIControl+SAAdd.h"
 #import "MESwizzleTool.h"
+#import "NSObject+Add.h"
+#import "SAHelper.h"
+#import <SensorsAnalyticsSDK/SensorsAnalyticsSDK.h>
 
 @implementation UIControl (SAAdd)
 + (void)load {
@@ -22,7 +25,19 @@
 
 - (void)me_sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event {
     [self me_sendAction:action to:target forEvent:event];
+    NSDictionary *controlConfigure = [SAHelper sharedInstance].controlConfigure;
+    NSString *targetName = NSStringFromClass([target class]);
+    NSDictionary *configureParam = controlConfigure[targetName];
+    if (!configureParam) return;
     
+    NSString *selName = NSStringFromSelector(action);
+    NSDictionary *configure = configureParam[selName];
+    if (!configure) return;
+    
+    NSMutableDictionary *values = [NSMutableDictionary new];
+    NSString *entity = configure[@"entity"];
+    id model = [target valueForKey:entity];
+    [SAHelper trackConfigure:configure model:model];
 }
 
 

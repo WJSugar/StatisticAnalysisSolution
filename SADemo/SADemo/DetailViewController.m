@@ -17,13 +17,27 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    UIView *button = [UIView new];
     button.frame = CGRectMake(0, 300, [UIScreen mainScreen].bounds.size.width, 45);
-    button.backgroundColor = [UIColor redColor];
+    button.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:button];
-    [button addTarget:self
-               action:@selector(buttonAction)
-     forControlEvents:UIControlEventTouchUpInside];
+    UITapGestureRecognizer *tg = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                         action:@selector(buttonTapAction)];
+    [button addGestureRecognizer:tg];
+
+
+    
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+//    button.frame = CGRectMake(0, 300, [UIScreen mainScreen].bounds.size.width, 45);
+//    button.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:button];
+//    [button addTarget:self
+//               action:@selector(buttonAction)
+//     forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)buttonTapAction {
+//    NSLog(@" tap action - %@", tap.delegate);
 }
 
 - (void)buttonAction {

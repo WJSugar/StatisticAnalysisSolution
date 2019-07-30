@@ -15,9 +15,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) NSDictionary *contollers;
 @property (nonatomic, strong, readonly) NSDictionary *actions;
 @property (nonatomic, strong, readonly) NSDictionary *tableConfigure;
+@property (nonatomic, strong, readonly) NSDictionary *controlConfigure;
+@property (nonatomic, strong, readonly) NSDictionary *gestureConfigure;
 
 - (NSString *)pageCodeController:(NSString *)controller;
 - (NSString *)getPageCodeController:(UIViewController *)controller;
+
++ (void)trackConfigure:(NSDictionary *)configure model:(id)model;
 @end
 
 NS_ASSUME_NONNULL_END

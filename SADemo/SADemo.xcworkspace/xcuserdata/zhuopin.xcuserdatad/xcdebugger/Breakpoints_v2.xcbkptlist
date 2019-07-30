@@ -47,76 +47,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SADemo/SAHelper/Category/UIControl+SAAdd.m"
-            timestampString = "585656824.909196"
+            filePath = "SADemo/SAHelper/Category/NSObject+Add.m"
+            timestampString = "586172322.511863"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "+load"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "+[UIControl(SAAdd) load]"
-                  moduleName = "SADemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhuopin/Desktop/tetsss/StatisticAnalysisSolution/SADemo/SADemo/SAHelper/Category/UIControl+SAAdd.m"
-                  timestampString = "585656506.746736"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__24+[UIControl(SAAdd) load]_block_invoke"
-                  moduleName = "SADemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhuopin/Desktop/tetsss/StatisticAnalysisSolution/SADemo/SADemo/SAHelper/Category/UIControl+SAAdd.m"
-                  timestampString = "585656506.748296"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_"
-                  moduleName = "SADemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhuopin/Desktop/tetsss/StatisticAnalysisSolution/SADemo/SADemo/SAHelper/Category/UIControl+SAAdd.m"
-                  timestampString = "585656506.749902"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "8">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SADemo/SAHelper/Category/UITableView+SAAdd.m"
-            timestampString = "585656824.909542"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "-me_tableView:didSelectRowAtIndexPath:"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "-valueForProperty:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -126,13 +63,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SADemo/SAHelper/Category/UIControl+SAAdd.m"
-            timestampString = "585656824.909586"
+            filePath = "SADemo/SAHelper/Category/UIView+SAAdd.m"
+            timestampString = "586176516.822672"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "-me_sendAction:to:forEvent:"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "-me_gestureRecognizerShouldBegin:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
